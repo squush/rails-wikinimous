@@ -1,0 +1,11 @@
+<h1> Update -<%= @article.title %>-</h1>
+
+  <%= form_with model: @article do |t| %>
+    <%= t.label :title %>
+    <%= t.text_field :title %>
+    <%= t.label :content %>
+    <%= t.text_field :content %>
+    <%= t.submit %>
+  <% end %>
+
+<p><%= link_to "Back to #{@article.title}", article_path(@article) %></p>
