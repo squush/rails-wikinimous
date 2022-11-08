@@ -14,15 +14,40 @@
  *= require_self
  */
 
- h1, p, ul, form {
+ h1, p, ul, form, h3 {
+  text-align: center;
+ }
+
+ .center {
   text-align: center;
  }
 
  ul {
   list-style: none;
+  margin: 0px 0px;
+  padding: 0px 0px;
  }
 
  .green {
-  text-decoration: none;
   color: green;
+ }
+
+ a {
+  color: gray;
+  text-decoration: none;
+ }
+
+ .pretty {
+  background-color: green;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
  }
